@@ -1,56 +1,152 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: ""
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
+## About Me {#about}
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+I’m Yasmeen, and I like making things. Most evenings you’ll find me in my workshop tinkering away, whether that’s tuning a 3D printer until it runs flawlessly, assembling hardware, fixing broken objects from around the house, or hand-painting a miniature down to the last detail. It’s taught me patience and how the work is as enjoyable as the result.
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+By day, I’m a Senior Consultant on PwC’s Engineering, Cloud, and Data team. I build machine learning, analytics, and data systems for financial services and government entities, a path that began after my graduation with a B.Sc. in Computer Science from King Saud University.
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+I’m now applying to pursue a master’s degree to contribute to furthering systems that perceive and interact with the physical world; an area where cameras, sensors, and learning meet.
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+## Publication {#publication}
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
+<div class="entry">
+  <div class="entry-text">
+    <h3>Analyzing Arabic Twitter-Based Patient Experience Sentiments Using Multi-Dialect Arabic Bidirectional Encoder Representations from Transformers</h3>
+    <p class="entry-meta">S. AlMuhaideb, <strong>Y. AlNegheimish</strong>, T. AlOmar, R. AlSabti, M. AlKathery, G. AlOlyyan</p>
+    <p class="entry-meta"><em>Computers, Materials &amp; Continua</em>, vol. 76, no. 1, 2023</p>
+    <p>Our capstone project where collected and annotated 12,400 Arabic tweets about Saudi healthcare providers (Fleiss' κ = 0.96) and released them as HoPE-SA, the first public Saudi Arabic patient-experience corpus. Our MARBERT model fine-tuned with a BiLSTM layer reached 98.6% macro-F1, outperforming mBERT and SVM baselines.</p>
+    <p class="entry-links">
+      <a href="https://doi.org/10.32604/cmc.2023.038368" title="Paper" aria-label="Paper"><i class="fas fa-file-pdf"></i></a>
+      <a href="https://github.com/HoPESA-KSU/Patient-Experience-SA" title="Dataset" aria-label="Dataset"><i class="fas fa-database"></i></a>
+    </p>
+  </div>
+  <div class="entry-media">
+   <img src="/images/projects/capstone-pipeline.png" alt="HoPE-SA dataset construction and classification pipeline">
+    <img src="/images/projects/capstone-dist.png" alt="HoPE-SA dataset distribution">
+    </div>
+</div>
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](https://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+## Select Projects {#projects}
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+<div class="entry">
+  <div class="entry-text">
+    <h3>Purrsuit</h3>
+    <p class="entry-meta">Personal project (2026)</p>
+    <p>Programmed an Arduino UNO robot car into an autonomous playmate for cats that uses its camera to spot them and lure them into chasing it around the room. Camera frames stream over Wi-Fi to a computer running a YOLO11 model for real-time cat detection, and each detection becomes a motor command to sprint, flee, or tease to keep the game going.</p>
+     <p class="entry-links">
+  <a href="https://github.com/Yalnegheimish/PurrSuit-Bot" title="Code" aria-label="Code"><i class="fab fa-github"></i></a>
+</p>
+  </div>
+  <img class="entry-img" src="/images/projects/purrsuit.gif" alt="Purrsuit demo gif">
+</div>
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+<div class="entry">
+  <div class="entry-text">
+    <h3>Bleeding Spot Detection in Wireless Capsule Endoscopy</h3>
+    <p class="entry-meta">Computer vision course (2022)</p>
+    <p>Hand-annotated small bleeding spots in 1,275 capsule endoscopy frames, where a swallowed camera films the digestive tract, turning image-level labels into bounding boxes a detector could learn from. Fine-tuned YOLOv5 in PyTorch on this data, reaching a 97.3% F1-score and 95.7% mAP@50. Its accuracy dropped under stricter box-overlap requirements, showing it found lesions reliably but outlined them loosely.</p>
+  </div>
+  <img class="entry-img" src="/images/projects/mbs.png" alt="Wireless capsule endoscopy detection sample">
+</div>
 
-**Markdown generator**
+<div class="entry">
+  <div class="entry-text">
+    <h3>Solving the Bridge and Torch Puzzle with Search</h3>
+    <p class="entry-meta">Artificial Intelligence course (2021)</p>
+    <p>Formulated the classic Bridge and Torch puzzle as a state-space search problem and solved it in Java with Uniform-Cost Search (UCS), Iterative Deepening Search (IDS), and A*, testing on groups of three to eight people. A* and UCS always found the fastest crossing, but UCS’s time and memory grew exponentially with group size. For example, for eight people, A* explored about 180 times fewer nodes (368 vs. 67,247). IDS, on the other hand, used the least memory but never found the fastest crossing.</p>
+  </div>
+    <div class="entry-media">
+   <img src="/images/projects/bridge-3.jpg" alt="Output comparing the three solutions for eight people.">
+   <img src="/images/projects/bridge-8.jpg" alt="Output comparing the three solutions for eight people.">
+    </div>
+</div>
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
+## Workbench {#workbench}
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+Most of my free time is spent in my home workshop, where I 3D print, build, and hand-paint. Below is a selection of my work.
 
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
+<a href="/images/workbench/workshop.jpg" class="glightbox" data-gallery="workshop">
+<img src="/images/workbench/workshop.jpg" alt="My workshop" style="width:100%; max-height:380px; object-fit:cover; border-radius:6px;"> </a>
+<a href="/images/workbench/workshop-2.jpg" class="glightbox" data-gallery="workshop"></a>
+<a href="/images/workbench/workshop-3.jpg" class="glightbox" data-gallery="workshop"></a>
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+### Select Builds
+<div class="gallery">
+  <!--Turntable-->
+  <figure>
+    <a href="/images/workbench/turntable1.gif" class="glightbox" data-gallery="builds">
+      <img src="/images/workbench/turntable1.gif" alt="Potentiometer Turntable">
+    </a>
+    <a href="/images/workbench/turntable.jpg" class="glightbox" data-gallery="builds"></a>
+    <figcaption>Motorized Turntable for Photography</figcaption>
+  </figure>
+  <!--Fume extractor-->
+  <figure>
+    <a href="/images/workbench/fume.jpg" class="glightbox" data-gallery="builds">
+      <img src="/images/workbench/fume.jpg" alt="Fume Extractor">
+    </a>
+    <figcaption>PC Fan Soldering Fume Extractor</figcaption>
+  </figure>
+  <!--Shoretrooper-->
+  <figure>
+    <a href="/images/workbench/shoretrooper.jpg" class="glightbox" data-gallery="builds">
+      <img src="/images/workbench/shoretrooper.jpg" alt="Star Wars Shoretrooper Helmet">
+    </a>
+    <figcaption>[WIP] Star Wars Shoretrooper Helmet</figcaption>
+  </figure>
+  </div>
+
+### Select Painted Miniatures
+
+<div class="gallery">
+  <!--Alva-->
+  <figure>
+    <a href="/images/workbench/alva.jpg" class="glightbox" data-gallery="minis">
+      <img src="/images/workbench/alva.jpg" alt="Alva Dark Souls bust">
+    </a>
+    <a href="/images/workbench/alva2.jpg" class="glightbox" data-gallery="minis"></a>
+    <figcaption>Alva, Seeker of the Spurned (Resin 3D Printed) - Model by <a href="https://www.printables.com/model/505406-alva-seeker-of-the-spurned-dark-souls-pre-supporte">Dante Zuck</a></figcaption>
+  </figure>
+  <!--Mighty Knight-->
+  <figure>
+    <a href="/images/workbench/mightyknight.jpg" class="glightbox" data-gallery="minis">
+      <img src="/images/workbench/mightyknight.jpg" alt="Mighty Knight">
+    </a>
+    <figcaption>Mighty Knight (Resin 3D Printed) - Model by <a href="https://www.myminifactory.com/object/3d-print-hello-potion-seller-bust-pre-supported-119306">TytanTroll Miniatures</a></figcaption>
+  </figure>
+  <!--Thorvin-->
+  <figure>
+    <a href="/images/workbench/dwarf.jpg" class="glightbox" data-gallery="minis">
+      <img src="/images/workbench/dwarf.jpg" alt="Thorvin, The Great">
+    </a>
+    <figcaption>Thorvin, The Great - Model by <a href="https://ak-interactive.com/product/thorvin-the-great-35mm/">Rage Resin Models</a></figcaption>
+  </figure>
+  <!--Detritus-->
+  <figure>
+    <a href="/images/workbench/detritus.jpg" class="glightbox" data-gallery="minis">
+      <img src="/images/workbench/detritus.jpg" alt="Detritus">
+    </a>
+    <figcaption>Detritus (Resin 3D Printed) - Model by <a href="https://cults3d.com/en/3d-model/game/discworld-the-watch-pack-pre-supported">TytanTroll Miniatures</a></figcaption>
+  </figure>
+  <!--Jeff-->
+  <figure>
+    <a href="/images/workbench/jeff.jpg" class="glightbox" data-gallery="minis">
+      <img src="/images/workbench/jeff.jpg" alt="Jeff the Landshark">
+    </a>
+    <figcaption>Jeff The Landshark (Resin 3D Printed) - Model by <a href="https://cults3d.com/en/3d-model/art/hq-jeff">EX_DESIGN</a></figcaption>
+  </figure>
+  <!--Ork-->
+  <figure>
+    <a href="/images/workbench/orkwarboss.jpg" class="glightbox" data-gallery="minis">
+      <img src="/images/workbench/orkwarboss.jpg" alt="Bawla and Burk">
+    </a>
+    <figcaption>Bawla and Burk - Model by Games Workshop</figcaption>
+  </figure>
+</div>
